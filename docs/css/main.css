@@ -594,6 +594,10 @@ img {
   .container {
     width: 100%;
   }
+  .wrapper {
+    height: auto;
+    padding: 50px 0;
+  }
   .wrapper__results {
     width: 100%;
     -webkit-box-orient: vertical;

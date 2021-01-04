@@ -199,6 +199,8 @@ img {
         width: 100%;
     }
     .wrapper {
+        height: auto;
+        padding: 50px 0;
         &__results {
             width: 100%;
             flex-direction: column;
