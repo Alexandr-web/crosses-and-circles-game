@@ -11,13 +11,28 @@
 <body>
     <div class="wrapper">
         <div class="container">
-            <div class="wrapper__modal-window">
-                <h3 class="wrapper__modal-window-heading">Результаты</h3>
-                <p class="wrapper__modal-window-desc"></p>
-                <button class="wrapper__modal-window-btn">Подтвердить</button>
+            <ul class="wrapper__results">
+                <li class="wrapper__results-item">
+                    <div class="wrapper__results-item-block">
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="wrapper__results-item-block" data-figure="cross">0</div>
+                </li>
+                <li class="wrapper__results-item">
+                    <div class="wrapper__results-item-block">
+                        <span></span>
+                    </div>
+                    <div class="wrapper__results-item-block" data-figure="circle">0</div>
+                </li>
+            </ul>
+            <div class="wrapper__move">
+                <span class="cross">Ходит</span>
             </div>
             <ul class="wrapper__list"></ul>
-            <button class="wrapper__reset">Переиграть</button>
+            <div class="wrapper__info">
+                <span>Идет игра</span>
+            </div>
         </div>
     </div>
 
