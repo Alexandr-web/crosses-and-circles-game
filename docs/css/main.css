@@ -367,16 +367,8 @@ img {
 }
 
 .wrapper {
-  height: 100vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: auto;
+  padding: 50px 0;
 }
 
 .wrapper__list {
@@ -387,6 +379,7 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
   gap: 1px;
+  margin: 0 auto;
 }
 
 .wrapper__list-item {
@@ -593,10 +586,6 @@ img {
 @media screen and (max-width: 440px) {
   .container {
     width: 100%;
-  }
-  .wrapper {
-    height: auto;
-    padding: 50px 0;
   }
   .wrapper__results {
     width: 100%;
