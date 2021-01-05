@@ -5,33 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/main.css">
-    <title>Крестики, нолики</title>
+    <title>Крестики-нолики</title>
 </head>
 
 <body>
     <div class="wrapper">
         <div class="container">
-            <ul class="wrapper__results">
-                <li class="wrapper__results-item">
-                    <div class="wrapper__results-item-block">
-                        <span></span>
-                        <span></span>
+            <div class="wrapper__content">
+                <header class="wrapper__header">
+                    <ul class="wrapper__results">
+                        <li class="wrapper__results-item">
+                            <div class="wrapper__results-item-block">
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <div class="wrapper__results-item-block" data-figure="cross">0</div>
+                        </li>
+                        <li class="wrapper__results-item">
+                            <div class="wrapper__results-item-block">
+                                <span></span>
+                            </div>
+                            <div class="wrapper__results-item-block" data-figure="circle">0</div>
+                        </li>
+                    </ul>
+                    <div class="wrapper__move">
+                        <span class="cross">Ходит</span>
                     </div>
-                    <div class="wrapper__results-item-block" data-figure="cross">0</div>
-                </li>
-                <li class="wrapper__results-item">
-                    <div class="wrapper__results-item-block">
-                        <span></span>
+                    <button class="wrapper__show-statistic-btn">Показать общую статистику</button>
+                </header>
+                <main class="wrapper__main">
+                    <div class="wrapper__main-block">
+                        <div class="wrapper__main-block-front">
+                            <ul class="wrapper__list"></ul>
+                        </div>
+                        <div class="wrapper__main-block-back">
+                            <h3 class="wrapper__main-block-back-heading">Общая статистика за игру</h3>
+                            <ul class="wrapper__main-block-back-statistic">
+                                <li class="wrapper__main-block-back-statistic-item">
+                                    <div class="wrapper__main-block-back-statistic-item-block">Всего побед</div>
+                                    <div class="wrapper__main-block-back-statistic-item-block" data-statistic="wins">0</div>
+                                </li>
+                                <li class="wrapper__main-block-back-statistic-item">
+                                    <div class="wrapper__main-block-back-statistic-item-block">Всего поражений</div>
+                                    <div class="wrapper__main-block-back-statistic-item-block" data-statistic="lose">0</div>
+                                </li>
+                                <li class="wrapper__main-block-back-statistic-item">
+                                    <div class="wrapper__main-block-back-statistic-item-block">Всего ничьих</div>
+                                    <div class="wrapper__main-block-back-statistic-item-block" data-statistic="draw">0</div>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="wrapper__results-item-block" data-figure="circle">0</div>
-                </li>
-            </ul>
-            <div class="wrapper__move">
-                <span class="cross">Ходит</span>
-            </div>
-            <ul class="wrapper__list"></ul>
-            <div class="wrapper__info">
-                <span>Идет игра</span>
+                </main>
+                <footer class="wrapper__footer">
+                    <div class="wrapper__info">
+                        <span>Идет игра</span>
+                    </div>
+                    <button class="wrapper__btn-reset">Обнулить счет</button>
+                </footer>
             </div>
         </div>
     </div>
