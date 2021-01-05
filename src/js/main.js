@@ -286,6 +286,22 @@ const game = () => {
                 item.innerHTML = lose;
             }
 
+            if (data === 'wins-cross') {
+                item.innerHTML = points.cross.win;
+            }
+
+            if (data === 'lose-cross') {
+                item.innerHTML = points.cross.lose;
+            }
+
+            if (data === 'wins-circle') {
+                item.innerHTML = points.circle.win;
+            }
+
+            if (data === 'lose-circle') {
+                item.innerHTML = points.circle.lose;
+            }
+
             if (data === 'draw') {
                 item.innerHTML = points.draw;
             }
