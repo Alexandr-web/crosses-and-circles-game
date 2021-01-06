@@ -135,6 +135,7 @@ const game = () => {
 
                 showWinner();
                 writeResults();
+                setStatistic();
             }
         });
     });
